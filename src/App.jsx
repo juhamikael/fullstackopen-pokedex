@@ -28,7 +28,8 @@ const App = () => {
   if (error) {
     return <ErrorMessage error={error} />
   }
-
+  // eslint-disable-next-line no-console
+  console.log("pokemonList=", pokemonList)
   let next = null
   let previous = null
 
