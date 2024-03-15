@@ -60,7 +60,7 @@ jobs:
         if: ${{ success() }}
         uses: BubbleProd/discord-webhook-notify@v2.0.1
         with:
-          severity: informational
+          severity: info
           details: "A new version of Pokedex deployed"
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Notify Failure
